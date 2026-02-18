@@ -27,6 +27,7 @@ modules:
       files: 
         - https://cli.github.com/packages/rpm/gh-cli.repo
         - codium.repo
+        - antigravity.repo
       copr:
         - atim/starship
         - kordus/cosmic-applets 
