@@ -6,7 +6,7 @@ name: oxide
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/blue-build/base-images/fedora-cosmic
+base-image: ghcr.io/blue-build/base-images/fedora-kinoite
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -27,17 +27,16 @@ modules:
       files: 
         - https://cli.github.com/packages/rpm/gh-cli.repo
         - codium.repo
+        - antigravity.repo
       copr:
         - atim/starship
-        - kordus/cosmic-applets 
     install:
       packages:
-        - micro
         - starship
         - fastfetch
         - gh
         - codium
-        - cosmic-ext-applet-clipboard-manager
+        - antigravity
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
