@@ -30,7 +30,6 @@ modules:
         - antigravity.repo
       copr:
         - atim/starship
-        - kordus/cosmic-applets 
     install:
       packages:
         - starship
@@ -38,7 +37,6 @@ modules:
         - gh
         - codium
         - antigravity
-        - cosmic-ext-applet-clipboard-manager
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
